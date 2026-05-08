@@ -18,11 +18,8 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 <h2>Ticket Lifecycle Stages</h2>
 
 - Intake
-  
 - Assignment and Communication
-  
 - Working the Issue
-  
 - Resolution
   
 <h2>Ticket Resolutions</h2>
@@ -32,11 +29,13 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 </p>
 <p>
 
-- This ticket simulates a business critical outage affecting a bank’s online and mobile banking systems. The end user Karen reports that both services are down.
+- Intake: This ticket simulates a business critical outage affecting a bank’s online and mobile banking systems. The end user Karen reports that both services are down. It is originally marked as Normal priority with a default SLA under the "Other" Help Topic.
   
-- Tier 1 support would start initial troubleshooting by confirming the issue scope such as who and what is affected, verifying whether the outage is isolated or affecting multiple users, checking basic connectivity, and reviewing any recent service changes or known incidents. After follow-up, it is confirmed that the issue impacts the entire branch, indicating a system-wide outage.
+- Assignment and Communication: Tier 1 support would claim the ticket, confirming the issue scope with Karen by asking who and what is affected, verifying whether the outage is isolated or affecting multiple users. Confirming that the entire branch cannot access the online and mobile banking systems, the ticket is upgraded to an Emergency priority level with a high severity SLA classification and moved to the 'Business Critical" Help Topic.
 
-- Based on the ticket severity and business impact, this ticket is upgraded to an Emergency priority level with a high severity SLA classification, and is escalated to the SysAdmin team for further troubleshooting due to being out of tier 1 scope.
+- Working the Issue: Tier 1 support would initiate troubleshooting such as checking basic connectivity, and reviewing any recent service changes or known incidents. After follow-up, it is confirmed that the issue impacts the entire branch, indicating a system-wide outage.
+
+- Resolution: Based on the ticket severity and business impact, the ticket is escalated to the SysAdmin team for further troubleshooting due to being out of tier 1 scope.
 
 </p>
 <br />
@@ -46,15 +45,13 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 </p>
 <p>
 
-- This ticket simulates an application failure affecting the Accounting department. End user Ken reports Adobe Reader does not launch and that 10 out of 12 of his coworkers cannot access it.
+- Intake: This ticket simulates an application failure affecting the Accounting department. End user Ken reports Adobe Reader does not launch and that 10 out of 12 of his coworkers cannot access it. It is originally marked as Normal priority with a default SLA under the "Personal Computers Issue" Help Topic.
 
-- Initial scope analysis confirms that 10 of 12 users are unable to launch Adobe Reader, coinciding with an ongoing internal audit, which increases business impact. Based on the scope and severity of the issue, the ticket is classified as High Priority with a Medium SLA.
+- Assignment and Communication: Tier 1 would claim the ticket and communicate with the end user Ken to find out who and what is affected. Ken confirms that 10 of 12 users are unable to launch Adobe Reader, coinciding with an ongoing internal audit, which increases the business impact. Based on the scope and severity of the issue, the ticket is upgraded to a High Priority with a Medium SLA.
 
-- Tier 1 troubleshooting includes observing how the application behaves, confirming the issue persists after restarts and trying to launch it in safe mode.
+- Working the Issue: Tier 1 troubleshooting includes remoting in to observe how the application behaves, confirming the issue persists after restarts and trying to launch it in safe mode. Further investigation shows that an Adobe Reader update deployed overnight has caused the application to stop launching.
 
-- Further investigation shows that an Adobe Reader update deployed overnight has caused the application to stop launching. A resolution is provided by the SysAdmin team, offering the end users either manual installation via the software catalog or waiting for a network-wide redeployment of a fixed package.
-
-- The end user chooses to do a manual installation across the affected workstations, resolving the issue. Adobe Reader functionality is verified with the end user, and the ticket is closed.
+- Resolution: A resolution is provided by the SysAdmin team, offering the end users either manual installation via the software catalog or waiting for a network-wide redeployment of a fixed package. The end user chooses to do a manual installation across the affected workstations, resolving the issue. Adobe Reader functionality is verified with the end user, and the ticket is closed.
 
 </p>
 <br />
